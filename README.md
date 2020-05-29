@@ -62,4 +62,4 @@ For each of the following exercises, provide the appropriate query. Yes, even th
 1. `top_2013_track.sql`: Provide a query that shows the most purchased track of 2013.
 1. `top_5_tracks.sql`: Provide a query that shows the top 5 most purchased tracks over all.
 1. `top_3_artists.sql`: Provide a query that shows the top 3 best selling artists.
-1. `top_media_type.sql`: Provide a query that shows the most purchased Media Type.# chinook-trinityterry
+1. `top_media_type.sql`: Provide a query that shows the most purchased Media Type.# 
