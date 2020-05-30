@@ -2,7 +2,8 @@
 
 -- Create an ERD of the Chinook database with dbdiagram.io. Make sure to label primary keys, foreign keys, and indicate the type of relationship (one to one, one to many, many to many, etc) for each relationship.
 
--- non_usa_customers.sql: Provide a query showing Customers (just their full names, customer ID and country) who are not in the US.
+-- -- non_usa_customers.sql: Provide a query showing Customers (just their full names, customer ID and country) who are not in the US.
+-- SELECT c.FirstName, c.LastName, c.CustomerId, c.Country from Customer as c WHERE c.Country IS NOT "USA";
 
 -- brazil_customers.sql: Provide a query only showing the Customers from Brazil.
 
