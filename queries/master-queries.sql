@@ -8,9 +8,10 @@
 
 -- -- brazil_customers_invoices.sql: Provide a query showing the Invoices of customers who are from Brazil. The resultant table should show the customer's full name, Invoice ID, Date of the invoice and billing country.
 -- SELECT c.FirstName, c.LastName, i.InvoiceId, i.InvoiceDate, i.BillingCountry FROM Invoice as i JOIN Customer as c ON c.CustomerId == i.CustomerId WHERE c.Country IS "Brazil";
-------------------------------
 
--- sales_agents.sql: Provide a query showing only the Employees who are Sales Agents.
+-- -- sales_agents.sql: Provide a query showing only the Employees who are Sales Agents.
+-- SELECT * FROM Employee as e WHERE e.Title == "Sales Support Agent";
+------------------------------
 
 -- unique_invoice_countries.sql: Provide a query showing a unique/distinct list of billing countries from the Invoice table.
 
