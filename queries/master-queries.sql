@@ -88,9 +88,14 @@
 -- LEFT JOIN Track t ON t.TrackId == il.TrackId
 -- LEFT JOIN Album al ON al.AlbumId == t.AlbumId
 -- LEFT JOIN Artist ar ON ar.ArtistId == al.AlbumId;
-------------------------------
 
--- country_invoices.sql: Provide a query that shows the # of invoices per country. HINT: GROUP BY
+-- -- country_invoices.sql: Provide a query that shows the # of invoices per country. HINT: GROUP BY
+-- SELECT 
+--     COUNT(i.BillingCountry) '# of Invoices',
+--     i.BillingCountry 'Country'
+-- FROM Invoice i
+-- GROUP BY i.BillingCountry;
+------------------------------
 
 -- playlists_track_count.sql: Provide a query that shows the total number of tracks in each playlist. The Playlist name should be include on the resulant table.
 
