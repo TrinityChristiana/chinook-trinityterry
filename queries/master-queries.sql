@@ -37,10 +37,9 @@
 --     ON c.CustomerId == i.CustomerId
 -- LEFT JOIN Employee as e 
 --     ON e.EmployeeId == c.SupportRepId;
-
--- -- total_invoices_{year}.sql: How many Invoices were there in 2009 and 2011?
--- SELECT COUNT(*) '# of Invoices from 2009/2011' FROM Invoice as i WHERE i.InvoiceDate LIKE "2011%" OR i.InvoiceDate LIKE "2009%";
 ------------------------------
+
+-- total_invoices_{year}.sql: How many Invoices were there in 2009 and 2011?
 
 -- total_sales_{year}.sql: What are the respective total sales for each of those years?
 
