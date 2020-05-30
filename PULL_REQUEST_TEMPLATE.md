@@ -14,8 +14,7 @@ Please include a summary of the change and which issue is fixed.
 - 
 
 # Checklist:
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation specific to my parts
+- [ ] query meets requirements
+- [ ] Added query to master file
+- [ ] Moved .sql file to finished folder
 - [ ] My changes generate no new warnings
