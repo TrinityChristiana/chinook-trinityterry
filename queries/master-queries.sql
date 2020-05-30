@@ -61,9 +61,19 @@
 --     Count(il.InvoiceId) 'Items' 
 -- from InvoiceLine as il
 -- GROUP BY il.InvoiceId;
-------------------------------
 
--- line_item_track.sql: Provide a query that includes the purchased track name with each invoice line item.
+-- -- line_item_track.sql: Provide a query that includes the purchased track name with each invoice line item.
+-- SELECT 
+--     il.InvoiceLineId,
+--     il.InvoiceId,
+--     il.TrackId,
+--     t.Name,
+--     il.UnitPrice,
+--     il.Quantity
+-- FROM InvoiceLine il
+-- INNER JOIN Track t
+-- ON t.TrackId == il.TrackId;
+------------------------------
 
 -- line_item_track_artist.sql: Provide a query that includes the purchased track name AND artist name with each invoice line item.
 
