@@ -12,7 +12,7 @@
 -  ~~`line_item_track.sql`: Provide a query that includes the purchased track name with each invoice line item.~~
 -  ~~`line_item_track_artist.sql`: Provide a query that includes the purchased track name AND artist name with each invoice line item.~~
 -  ~~`country_invoices.sql`: Provide a query that shows the # of invoices per country. HINT: [GROUP BY](http://www.sqlite.org/lang_select.html#resultset)~~
--  `playlists_track_count.sql`: Provide a query that shows the total number of tracks in each playlist. The Playlist name should be include on the resulant table.~~
+-  ~~`playlists_track_count.sql`: Provide a query that shows the total number of tracks in each playlist. The Playlist name should be include on the resulant table.~~
 -  `tracks_no_id.sql`: Provide a query that shows all the Tracks, but displays no IDs. The result should include the Album name, Media type and Genre.~~
 -  `invoices_line_item_count.sql`: Provide a query that shows all Invoices but includes the # of invoice line items.~~
 -  `sales_agent_total_sales.sql`: Provide a query that shows total sales made by each sales agent.~~
