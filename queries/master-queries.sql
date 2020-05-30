@@ -104,11 +104,31 @@
 -- INNER JOIN Playlist p ON p.PlaylistId == pt.PlaylistId
 -- INNER JOIN Track t ON t.TrackId == pt.TrackId
 -- GROUP BY pt.PlaylistId;
+
+-- -- tracks_no_id.sql: Provide a query that shows all the Tracks, but displays no IDs. The result should include the Album name, Media type and Genre.
+-- SELECT
+--     t.Name 'Track',
+--     a.Title 'Album',
+--     mt.Name 'Media Type',
+--     g.Name 'Genre',
+--     t.Composer,
+--     t.Milliseconds,
+--     t.Bytes,
+--     t.UnitPrice
+-- FROM Track t
+-- LEFT JOIN Album a ON a.AlbumId == t.AlbumId
+-- LEFT JOIN MediaType mt ON t.MediaTypeId == mt.MediaTypeId
+-- LEFT JOIN Genre g ON g.GenreId == t.GenreId;
+
+-- -- invoices_line_item_count.sql: Provide a query that shows all Invoices but includes the # of invoice line items.
+-- SELECT 
+--     COUNT(i.InvoiceId) '# of items',
+--     * 
+-- FROM Invoice i
+-- LEFT JOIN InvoiceLine il 
+--     ON il.InvoiceId == i.InvoiceId
+-- GROUP BY i.InvoiceId;
 ------------------------------
-
--- tracks_no_id.sql: Provide a query that shows all the Tracks, but displays no IDs. The result should include the Album name, Media type and Genre.
-
--- invoices_line_item_count.sql: Provide a query that shows all Invoices but includes the # of invoice line items.
 
 -- sales_agent_total_sales.sql: Provide a query that shows total sales made by each sales agent.
 
