@@ -48,9 +48,13 @@
 -- FROM Invoice as i
 -- WHERE STRFTIME('%Y', i.InvoiceDate) == "2009" OR STRFTIME('%Y', i.InvoiceDate) == "2011"
 -- GROUP BY InvoiceYear;
-------------------------------
 
--- invoice_37_line_item_count.sql: Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for Invoice ID 37.
+-- -- invoice_37_line_item_count.sql: Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for Invoice ID 37.
+-- SELECT 
+--     Count(*)  'Items for InvoiceId 37'
+-- from InvoiceLine as il
+-- WHERE il.InvoiceId == 37;
+------------------------------
 
 -- line_items_per_invoice.sql: Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for each Invoice. HINT: GROUP BY
 
