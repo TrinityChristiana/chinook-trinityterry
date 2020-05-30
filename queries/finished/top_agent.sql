@@ -1,4 +1,4 @@
--- top_agent.sql: Which sales agent made the most in sales over all?
+-- Which sales agent made the most in sales over all?
 SELECT 
     e.FirstName || ' ' || e.LastName 'Name',
 FROM Employee e

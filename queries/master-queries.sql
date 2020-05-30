@@ -182,9 +182,16 @@
 --     SUM(i.Total) 'Sales'
 -- FROM Invoice i
 -- GROUP BY i.BillingCountry;
-------------------------------
 
--- top_country.sql: Which country's customers spent the most?
+-- -- top_country.sql: Which country's customers spent the most?
+-- SELECT 
+--     i.BillingCountry 'Country',
+--     SUM(i.Total) Sales
+-- FROM Invoice i
+-- GROUP BY i.BillingCountry
+-- ORDER BY Sales DESC
+-- LIMIT 1;
+------------------------------
 
 -- top_2013_track.sql: Provide a query that shows the most purchased track of 2013.
 
