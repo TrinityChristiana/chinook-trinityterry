@@ -167,9 +167,15 @@
 -- GROUP BY e.EmployeeId
 -- ORDER BY  ROUND(SUM(i.Total), 2) DESC
 -- LIMIT 1;
-------------------------------
 
--- sales_agent_customer_count.sql: Provide a query that shows the count of customers assigned to each sales agent.
+-- -- sales_agent_customer_count.sql: Provide a query that shows the count of customers assigned to each sales agent.
+-- SELECT 
+--     e.FirstName || ' ' || e.LastName 'Employee Name',
+--     count(c.CustomerId) CustomerCount
+-- FROM Customer c
+-- LEFT JOIN Employee e ON c.SupportRepId == e.EmployeeId
+-- GROUP BY e.EmployeeId;
+------------------------------
 
 -- sales_per_country.sql: Provide a query that shows the total sales per country.
 
