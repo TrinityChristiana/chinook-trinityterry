@@ -95,9 +95,16 @@
 --     i.BillingCountry 'Country'
 -- FROM Invoice i
 -- GROUP BY i.BillingCountry;
-------------------------------
 
--- playlists_track_count.sql: Provide a query that shows the total number of tracks in each playlist. The Playlist name should be include on the resulant table.
+-- -- playlists_track_count.sql: Provide a query that shows the total number of tracks in each playlist. The Playlist name should be include on the resulant table.
+-- SELECT 
+--     COUNT(pt.PlaylistId) '# of Tracks',
+--     p.Name 'Playlist Name'
+-- FROM PlaylistTrack pt
+-- INNER JOIN Playlist p ON p.PlaylistId == pt.PlaylistId
+-- INNER JOIN Track t ON t.TrackId == pt.TrackId
+-- GROUP BY pt.PlaylistId;
+------------------------------
 
 -- tracks_no_id.sql: Provide a query that shows all the Tracks, but displays no IDs. The result should include the Album name, Media type and Genre.
 
