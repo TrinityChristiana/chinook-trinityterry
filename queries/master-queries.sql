@@ -175,9 +175,14 @@
 -- FROM Customer c
 -- LEFT JOIN Employee e ON c.SupportRepId == e.EmployeeId
 -- GROUP BY e.EmployeeId;
-------------------------------
 
--- sales_per_country.sql: Provide a query that shows the total sales per country.
+-- -- sales_per_country.sql: Provide a query that shows the total sales per country.
+-- SELECT 
+--     i.BillingCountry 'Country',
+--     SUM(i.Total) 'Sales'
+-- FROM Invoice i
+-- GROUP BY i.BillingCountry;
+------------------------------
 
 -- top_country.sql: Which country's customers spent the most?
 
