@@ -14,9 +14,18 @@
 
 -- -- unique_invoice_countries.sql: Provide a query showing a unique/distinct list of billing countries from the Invoice table.
 -- SELECT i.BillingCountry 'Billing Countries' from Invoice as i GROUP BY i.BillingCountry
-------------------------------
 
--- sales_agent_invoices.sql: Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name.
+-- -- sales_agent_invoices.sql: Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name.
+-- SELECT 
+--     i.*, e.FirstName  || ' ' || e.LastName 'Sales Agent', 
+--     c.FirstName || ' '|| c.LastName 'Customer'
+-- FROM Invoice as i 
+-- LEFT JOIN Customer as c 
+--     ON c.CustomerId == i.CustomerId 
+-- LEFT JOIN Employee as e 
+--     ON e.EmployeeId == c.SupportRepId 
+-- ORDER BY i.InvoiceId;
+------------------------------
 
 -- invoice_totals.sql: Provide a query that shows the Invoice Total, Customer name, Country and Sale Agent name for all invoices and customers.
 

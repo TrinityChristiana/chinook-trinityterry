@@ -1,8 +1,3 @@
-- [ ] `non_usa_customers.sql`: Provide a query showing Customers (just their full names, customer ID and country) who are not in the US.
-- [ ] `brazil_customers.sql`: Provide a query only showing the Customers from Brazil.
-- [ ] `brazil_customers_invoices.sql`: Provide a query showing the Invoices of customers who are from Brazil. The resultant table should show the customer's full name, Invoice ID, Date of the invoice and billing country.
-- [ ] `sales_agents.sql`: Provide a query showing only the Employees who are Sales Agents.
-- [ ] `unique_invoice_countries.sql`: Provide a query showing a unique/distinct list of billing countries from the Invoice table.
 - [ ] `sales_agent_invoices.sql`: Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name.
 - [ ] `invoice_totals.sql`: Provide a query that shows the Invoice Total, Customer name, Country and Sale Agent name for all invoices and customers.
 - [ ] `total_invoices_{year}.sql`: How many Invoices were there in 2009 and 2011?
