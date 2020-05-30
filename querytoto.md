@@ -22,7 +22,7 @@
 
 -  ~~`top_agent.sql`: Which sales agent made the most in sales over all?~~
 -  ~~`sales_agent_customer_count.sql`: Provide a query that shows the count of customers assigned to each sales agent.~~
--  `sales_per_country.sql`: Provide a query that shows the total sales per country.~~
+-  ~~`sales_per_country.sql`: Provide a query that shows the total sales per country.~~
 -  `top_country.sql`: Which country's customers spent the most?~~
 -  `top_2013_track.sql`: Provide a query that shows the most purchased track of 2013.~~
 -  `top_5_tracks.sql`: Provide a query that shows the top 5 most purchased tracks over all.~~
