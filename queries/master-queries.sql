@@ -142,20 +142,18 @@
 -- GROUP BY e.EmployeeId;
 
 -- -- top_2009_agent.sql: Which sales agent made the most in sales in 2009?
+-- -- Hint: Use the MAX function on a subquery.
 -- SELECT 
---     e.FirstName || ' ' || e.LastName 'Employee Name',
---     ROUND(SUM(i.Total), 2) as TotalSales
+--     e.FirstName || ' ' || e.LastName 'Name'
 -- FROM Employee e
 -- LEFT JOIN Customer c ON c.SupportRepId == e.EmployeeId
 -- LEFT JOIN Invoice i ON i.CustomerId == c.CustomerId
--- LEFT JOIN InvoiceLine il ON il.InvoiceId == i.InvoiceId
 -- WHERE e.Title == "Sales Support Agent"
 -- GROUP BY e.EmployeeId
--- ORDER BY TotalSales DESC
+-- ORDER BY  ROUND(SUM(i.Total), 2) DESC
 -- LIMIT 1;
 ------------------------------
 
--- Hint: Use the MAX function on a subquery.
 
 -- top_agent.sql: Which sales agent made the most in sales over all?
 
