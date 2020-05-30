@@ -11,9 +11,10 @@
 
 -- -- sales_agents.sql: Provide a query showing only the Employees who are Sales Agents.
 -- SELECT * FROM Employee as e WHERE e.Title == "Sales Support Agent";
-------------------------------
 
--- unique_invoice_countries.sql: Provide a query showing a unique/distinct list of billing countries from the Invoice table.
+-- -- unique_invoice_countries.sql: Provide a query showing a unique/distinct list of billing countries from the Invoice table.
+-- SELECT i.BillingCountry 'Billing Countries' from Invoice as i GROUP BY i.BillingCountry
+------------------------------
 
 -- sales_agent_invoices.sql: Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name.
 
