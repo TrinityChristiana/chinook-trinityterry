@@ -140,9 +140,20 @@
 -- LEFT JOIN InvoiceLine il ON il.InvoiceId == i.InvoiceId
 -- WHERE e.Title == "Sales Support Agent"
 -- GROUP BY e.EmployeeId;
-------------------------------
 
--- top_2009_agent.sql: Which sales agent made the most in sales in 2009?
+-- -- top_2009_agent.sql: Which sales agent made the most in sales in 2009?
+-- SELECT 
+--     e.FirstName || ' ' || e.LastName 'Employee Name',
+--     ROUND(SUM(i.Total), 2) as TotalSales
+-- FROM Employee e
+-- LEFT JOIN Customer c ON c.SupportRepId == e.EmployeeId
+-- LEFT JOIN Invoice i ON i.CustomerId == c.CustomerId
+-- LEFT JOIN InvoiceLine il ON il.InvoiceId == i.InvoiceId
+-- WHERE e.Title == "Sales Support Agent"
+-- GROUP BY e.EmployeeId
+-- ORDER BY TotalSales DESC
+-- LIMIT 1;
+------------------------------
 
 -- Hint: Use the MAX function on a subquery.
 
