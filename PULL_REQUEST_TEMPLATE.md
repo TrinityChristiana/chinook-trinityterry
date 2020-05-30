@@ -14,6 +14,8 @@ Please include a summary of the change and which issue is fixed.
 - 
 
 # Checklist:
+- [ ] Added query to indiv file
+- [ ] File has Directions above it
 - [ ] query meets requirements
 - [ ] Added query to master file
 - [ ] Moved .sql file to finished folder
