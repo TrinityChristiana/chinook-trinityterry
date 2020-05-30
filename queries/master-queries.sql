@@ -54,9 +54,14 @@
 --     Count(*)  'Items for InvoiceId 37'
 -- from InvoiceLine as il
 -- WHERE il.InvoiceId == 37;
-------------------------------
 
--- line_items_per_invoice.sql: Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for each Invoice. HINT: GROUP BY
+-- -- line_items_per_invoice.sql: Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for each Invoice. HINT: GROUP BY
+-- SELECT 
+--     il.InvoiceId 'Invoice #',
+--     Count(il.InvoiceId) 'Items' 
+-- from InvoiceLine as il
+-- GROUP BY il.InvoiceId;
+------------------------------
 
 -- line_item_track.sql: Provide a query that includes the purchased track name with each invoice line item.
 
