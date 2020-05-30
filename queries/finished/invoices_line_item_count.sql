@@ -1,6 +1,9 @@
--- Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for Invoice ID 37.
+-- Provide a query that shows all Invoices but includes the # of invoice line items.
 
 SELECT 
-    Count(*)  'Items for InvoiceId 37'
-from InvoiceLine as il
-WHERE il.InvoiceId == 37;
+    COUNT(i.InvoiceId) '# of items',
+    * 
+FROM Invoice i
+LEFT JOIN InvoiceLine il 
+    ON il.InvoiceId == i.InvoiceId
+GROUP BY i.InvoiceId;
