@@ -7,7 +7,7 @@ git checkout {BRANCH_NAME}
 ```
 
 # Description
-Created Query to "
+
 
 # Checklist:
 - [ ] Added query to indiv file
