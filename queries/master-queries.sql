@@ -40,9 +40,15 @@
 
 -- -- total_invoices_{year}.sql: How many Invoices were there in 2009 and 2011?
 -- SELECT COUNT(*) '# of Invoices from 2009/2011' FROM Invoice as i WHERE i.InvoiceDate LIKE "2011%" OR i.InvoiceDate LIKE "2009%";
-------------------------------
 
--- total_sales_{year}.sql: What are the respective total sales for each of those years?
+-- -- total_sales_{year}.sql: What are the respective total sales for each of those years?
+-- SELECT 
+--     SUM(i.total) 'Sales Total',
+--     STRFTIME('%Y', i.InvoiceDate) InvoiceYear
+-- FROM Invoice as i
+-- WHERE STRFTIME('%Y', i.InvoiceDate) == "2009" OR STRFTIME('%Y', i.InvoiceDate) == "2011"
+-- GROUP BY InvoiceYear;
+------------------------------
 
 -- invoice_37_line_item_count.sql: Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for Invoice ID 37.
 
