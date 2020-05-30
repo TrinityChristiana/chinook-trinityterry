@@ -7,11 +7,7 @@ git checkout {BRANCH_NAME}
 ```
 
 # Description
-Please include a summary of the change and which issue is fixed.
-
-# List of changes
-- 
-- 
+Created Query to "
 
 # Checklist:
 - [ ] Added query to indiv file
