@@ -25,6 +25,6 @@
 -  ~~`sales_per_country.sql`: Provide a query that shows the total sales per country.~~
 -  ~~`top_country.sql`: Which country's customers spent the most?~~
 -  ~~`top_2013_track.sql`: Provide a query that shows the most purchased track of 2013.~~
--  `top_5_tracks.sql`: Provide a query that shows the top 5 most purchased tracks over all.~~
+-  ~~`top_5_tracks.sql`: Provide a query that shows the top 5 most purchased tracks over all.~~
 -  `top_3_artists.sql`: Provide a query that shows the top 3 best selling artists.~~
 -  `top_media_type.sql`: Provide a query that shows the most purchased Media Type.~~
